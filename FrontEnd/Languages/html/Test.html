@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body{background-color: powderblue;}
+        h1{background-color: tomato;}
+        p{background-color: yellowgreen;}
+        table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 75%;
+                }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.city{
+    background-color:tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+    </style>
+</head>
+<body style="background-color:cadetblue;">
+    <h1 style="background-color: tomato;color: white;">This is a heading </h1>
+    <p style="background-color: yellowgreen;color: white;" ><b> is a praagraph</b></p>
+    <a href="https://www.takealot.com/"><b>takealot</b></a>
+    <a href="">
+        <img src="rose.jpg" alt="Rose Picture" style="height: 300px;width: 350px;">
+    </a>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contract</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Jiju</td>
+            <td>ID Tech</td>
+            <td>South Africa</td>
+        </tr>
+        <tr>
+            <td>Chris</td>
+            <td>Vodacom</td>
+            <td>United Kingdom</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Coffe</li>
+        <li>Tea</li>
+        <li>Cappucinno</li>
+        <li>soft drinks</li>
+    </ul>
+    <div class="city">
+            Hello world ..how are you
+    </div>
+    <div>
+        <form action="" method="get">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="fname" name="fname" >
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lname" name="lname" >
+            <label for="emailid">Email ID:</label>
+            <input type="text" id="email" name="email" >
+            <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <button style="height: 100px;width:100px;" onclick="document.location='https://www.takealot.com/'">Visit takealot</button>
+    
+</body>
+</html>
