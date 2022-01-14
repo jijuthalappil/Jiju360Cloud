@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div>
+            <label for="">Enter favourite dish</label>
+            <input type="text" name="txtfavdish" id="favdish">
+            <button onclick="addtofav()">Add to fav dissh</button>
+        </div>
+        <script src="" async defer></script>
+    </body>
+    <script>
+        var vehicle=["Car","bus","Bike"]
+        console.log(vehicle)
+        console.log(vehicle[0])
+        var [ca,Bu]=vehicle
+        console.log(Bu)
+        var copy=[...vehicle]
+        copy.push('Train')
+        console.log(copy[3])
+        console.log(copy)
+        function addtofav()
+        {
+            var data=document.getElementById("favdish").value 
+            copy.push(data)
+            console.log(copy)
+        }
+        class Human
+        {
+            constructor(emotion)
+            {
+                this.eyes=2
+                this.emotion=emotion
+
+            }
+            watch()
+            {
+                console.log('People can watch with this two eyes '+this.eyes)
+            }
+        }
+
+        var ishan=new Human("happy")
+        console.log(ishan)
+        ishan.watch()
+        var a=2
+        var b=3
+        console.log((a*b)*b)
+    </script>
+</html>
+

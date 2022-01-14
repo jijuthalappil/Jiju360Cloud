@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div id="root">
+            <button onclick="sendmail()">Send email</button>
+
+        </div>
+               
+        <script>
+            
+                function sendmail()
+                {
+                    var nodemailer=require('nodemailer')
+                    var trnsp=nodemailer.createTransport({
+                        service:'gmail',
+                        auth:{
+                            user:'jijuthalappil@gmail.com',
+                            pass:'iddxbsdg09'
+                        }
+                    })
+
+                    var options={
+                        from:'jijuthalappil@gmail.com',
+                        to:'mailtokhushi13@gmail.com',
+                        subject:'test third party pakage',
+                        text:'hello how r u '
+                    }
+
+                    trnsp.sendMail(options,(err,res)=>{
+                        if(err)throw err
+                         console.log('mail send')
+                        })
+                }
+        </script>
+    </body>
+</html>
